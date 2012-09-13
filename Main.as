@@ -57,17 +57,6 @@
 		
 		private function saveImage(e:MouseEvent):void
 		{
-			/*byteArray = jpg.encode(bmd);
-			fileReference.save(byteArray, "Image.jpg");
-			removeChild(bmp);
-			saveButton.visible = false;
-			discardButton.visible = false;
-			capture.visible = true;
-			
-			var jpgSource:BitmapData = new BitmapData (sketch_mc.width, sketch_mc.height);
-			jpgSource.draw(sketch_mc);
-			
-			;*/
 			var jpgEncoder:JPGEncoder = new JPGEncoder(85);
 			var jpgStream:ByteArray = jpgEncoder.encode(bmd);
 			
